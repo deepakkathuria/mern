@@ -2,8 +2,11 @@ const express = require('express')
 const connectDB =require('./config/db')
 // const jwt = reqiuire('jsonwebtoken')
 
+var bodyParser = require('body-parser')
 
 const app = express();
+app.use(bodyParser.json())
+
 
 //init middeware
 

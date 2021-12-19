@@ -7,8 +7,8 @@ const ProfileSchema = new mongoose.Schema({
    
 
 user:  {
-         type:mongoose.Schema.Types.objectId,
-         ref:'Users'
+         type:mongoose.Schema.Types.ObjectId,
+         ref:'user'
 },
     
 company:{
@@ -20,6 +20,10 @@ company:{
  location:{
      type: String,
      
+ },
+ status:{
+     type:String,
+     required:true
  },
  skills:{
      type: [String],
@@ -68,7 +72,7 @@ experience: [
     default:false
 },
 description:{
-    type: Date,
+    type: String,
 }
 
 }

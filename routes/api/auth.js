@@ -6,7 +6,7 @@ const gravatar =  require('gravatar')
 const bcrypt = require('bcryptjs')
 const config = require('config')
 const jwt = require('jsonwebtoken')
-const Users = require('./Models/Users');
+const Users = require('../../Models/Users');
 
 
 
